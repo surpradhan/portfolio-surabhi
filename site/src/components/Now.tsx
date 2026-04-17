@@ -16,7 +16,7 @@ export default function Now() {
           Now
         </p>
         <p className="text-xl sm:text-2xl font-light text-foreground/75 leading-relaxed tracking-tight">
-          Currently exploring multi-agent architectures — specifically how agents
+          Currently exploring multi-agent architectures - specifically how agents
           with different specializations can share memory and coordinate without
           a central orchestrator.
         </p>

@@ -16,7 +16,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Surabhi Pradhan — Building things that think",
+  title: "Surabhi Pradhan - Building things that think",
   description:
     "Protocol builder and AI engineer designing open infrastructure for the agent ecosystem, benchmarking what actually works, and shipping tools that run without the cloud.",
 };

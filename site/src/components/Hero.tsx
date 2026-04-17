@@ -40,8 +40,8 @@ export default function Hero() {
         className="flex items-end justify-between gap-8"
       >
         <p className="text-sm sm:text-base text-foreground/45 max-w-sm leading-relaxed">
-          Building things that think — protocols for multi-agent systems,
-          benchmarks to understand what actually works, tools that run without the cloud.
+          Building things that think - protocols for multi-agent systems,
+          benchmarks to understand what works, tools that run without the cloud.
         </p>
         <a
           href="#about"

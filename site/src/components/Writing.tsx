@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const posts = [
   {
     title: "Is AI Companionship Real Connection, or Just a Very Good Simulation?",
-    hook: "When a machine says 'I understand' — is it lying, or is that even the right question?",
+    hook: "When a machine says 'I understand' - is it lying, or is that even the right question?",
     link: "https://medium.com/@surabhi7pradhan/is-ai-companionship-real-connection-or-just-a-very-good-simulation-e41010ed850b",
     platform: "Medium",
   },

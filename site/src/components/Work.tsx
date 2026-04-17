@@ -8,7 +8,7 @@ const protocols = [
     description:
       "An open protocol + reference implementation for multi-agent AI memory coordination. Agents share context across frameworks and runtimes without being coupled to each other.",
     interesting:
-      "Most frameworks assume agents live in the same runtime. This one doesn't — and that changes what's architecturally possible.",
+      "I kept running into the same wall: frameworks that work brilliantly in isolation but can't share state across runtimes. This started as a fix for that.",
     tech: "Python · Multi-Agent · MIT License",
     badge: "Open Protocol",
     link: "https://github.com/surpradhan/shared-memory-protocol",
@@ -16,9 +16,9 @@ const protocols = [
   {
     title: "agent-event-protocol",
     description:
-      "An open observability protocol for AI agent systems — structured event capture, real-time session tracing, and multi-agent workflow visibility in a single self-hosted deployment.",
+      "An open observability protocol for AI agent systems - structured event capture, real-time session tracing, and multi-agent workflow visibility in a single self-hosted deployment.",
     interesting:
-      "Agents are black boxes right now. This gives you the instrumentation layer to actually understand what's happening inside a running agent.",
+      "You can't debug what you can't observe. Built this because I needed it and nothing else existed.",
     tech: "JavaScript · Observability · MIT License",
     badge: "Open Protocol",
     link: "https://github.com/surpradhan/agent-event-protocol",
@@ -29,16 +29,16 @@ const agents = [
   {
     title: "cartograph",
     description:
-      "Autonomous deep research agent built on LangGraph StateGraph. Takes a question, researches it, decides when it has enough, and returns a synthesis — not a list of links.",
-    interesting: "The key decision: letting the agent decide when to stop, not capping at N sources.",
+      "Autonomous deep research agent built on LangGraph StateGraph. Takes a question, researches it, decides when it has enough, and returns a synthesis - not a list of links.",
+    interesting: "Hard-capping sources felt like cheating. The interesting problem is teaching it to know when it knows enough.",
     tech: "Python · LangGraph · FAISS",
     link: "https://surpradhan.github.io/cartograph/",
   },
   {
     title: "paper-scout",
     description:
-      "An AI agent that searches arxiv, scores and re-ranks papers by relevance to you — surfacing the ones that actually matter, not the most-cited.",
-    interesting: "Re-ranking beats keyword search. Citation count ≠ relevance to your work.",
+      "An AI agent that searches arxiv, scores and re-ranks papers by relevance to you - surfacing the ones that actually matter, not the most-cited.",
+    interesting: "Keyword search gives you popular. Re-ranking gives you relevant. Not the same thing.",
     tech: "Python · arxiv API · Re-ranking",
     link: "https://surpradhan.github.io/paper-scout/",
   },
@@ -54,15 +54,15 @@ const agents = [
   {
     title: "customer-unification-agent",
     description:
-      "Probabilistic record linkage across Shopify & Stripe — 100% precision, zero false positives. Identifies the same customer across platforms without shared IDs.",
-    interesting: "100% precision was a hard constraint. Zero false positives means zero bad merges.",
+      "Probabilistic record linkage across Shopify & Stripe - 100% precision, zero false positives. Identifies the same customer across platforms without shared IDs.",
+    interesting: "The requirement was simple: never merge two customers who aren't the same person. That one constraint shapes every architectural decision.",
     tech: "Python · Probabilistic Matching",
     link: "https://surpradhan.github.io/customer-unification-agent/",
   },
   {
     title: "orionpulse-data-agent",
     description:
-      "A sales analytics agent that combines deterministic data tooling with optional LLM orchestration — deterministic where accuracy matters, LLM where language does.",
+      "A sales analytics agent that combines deterministic data tooling with optional LLM orchestration - deterministic where accuracy matters, LLM where language does.",
     interesting: "Not everything needs an LLM. Knowing when not to use one is half the skill.",
     tech: "Python · LangGraph · Analytics",
     link: "https://surpradhan.github.io/orionpulse-data-agent/",
@@ -71,30 +71,30 @@ const agents = [
     title: "agentic-codegen",
     description:
       "Multi-agent code generation platform: Python → optimized C++ using specialized AI agents with parallel processing and comprehensive validation pipelines.",
-    interesting: "One agent writes, others validate and optimize in parallel. Comprehensive beats sequential.",
+    interesting: "Sequential validation is a bottleneck. Parallelizing it across specialized agents was the thing that actually moved output quality.",
     tech: "Python · Multi-Agent · C++ · Parallel",
     link: "https://github.com/surpradhan/agentic-codegen",
   },
   {
     title: "customer-support-email-agent",
     description:
-      "LangGraph-powered customer support email agent that reads, classifies, and drafts contextual responses — with an auditable, interruptible state machine.",
-    interesting: "LangGraph's state machine makes the email workflow something you can inspect and pause.",
+      "LangGraph-powered customer support email agent that reads, classifies, and drafts contextual responses - with an auditable, interruptible state machine.",
+    interesting: "Email agents fail silently. The state machine means you can see exactly where it is and pull the brake if needed.",
     tech: "LangGraph · Python · Email",
     link: "https://surpradhan.github.io/customer-support-email-agent/",
   },
   {
     title: "spendwise-ai",
     description:
-      "A personal finance analyser that runs entirely on a local LLM stack. Drop in a bank export, get categorised spending and ML-powered insights — no data ever leaves your machine.",
-    interesting: "Privacy as an architectural constraint, not an afterthought. Every decision starts with 'what if the model runs offline?'",
+      "A personal finance analyser that runs entirely on a local LLM stack. Drop in a bank export, get categorised spending and ML-powered insights - no data ever leaves your machine.",
+    interesting: "Every architectural decision started from one question: what if the model never touches the internet? Built it local-first to see how far that constraint gets you.",
     tech: "Python · Local LLM · ML",
     link: "https://surpradhan.github.io/spendwise-ai/",
   },
   {
     title: "debate-arena",
     description:
-      "Watch two AI personalities argue about any topic you choose — give them opposing positions and let them go. Powered by Gradio.",
+      "Watch two AI personalities argue about any topic you choose - give them opposing positions and let them go. Powered by Gradio.",
     interesting: "Built to understand how LLMs construct arguments. Turns out it's also just fun.",
     tech: "Python · Gradio · Multi-Model",
     link: "https://github.com/surpradhan/debate-arena",
@@ -105,7 +105,7 @@ const research = [
   {
     title: "rag-benchmark",
     description:
-      "A reproducible benchmark comparing 11 RAG architectures on HotpotQA — same LLM, same embeddings, same eval set. The only variable is the architecture.",
+      "A reproducible benchmark comparing 11 RAG architectures on HotpotQA - same LLM, same embeddings, same eval set. The only variable is the architecture.",
     spec: "11 architectures · HotpotQA · Controlled eval",
     tech: "Python · RAG · Evaluation",
     link: "https://surpradhan.github.io/rag-benchmark/",
@@ -113,7 +113,7 @@ const research = [
   {
     title: "rec-bench",
     description:
-      "Compare 8 recommendation algorithms under a single, fair evaluation protocol to understand what actually drives recommendation quality — not which dataset flatters which algorithm.",
+      "Compare 8 recommendation algorithms under a single, fair evaluation protocol to understand what actually drives recommendation quality - not which dataset flatters which algorithm.",
     spec: "8 algorithms · Fair eval protocol · Single dataset",
     tech: "Jupyter · Recommendation · Evaluation",
     link: "https://surpradhan.github.io/rec-bench/",
