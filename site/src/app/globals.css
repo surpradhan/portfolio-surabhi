@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0c0907;
+  --foreground: #f0ece6;
+  --accent: #c8965a;
+  --muted: #181210;
+  --muted-foreground: #5a4a3a;
+  --border: #2c2218;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--background);
+  min-height: 100%;
+}
+
+body {
+  color: var(--foreground);
+  background: transparent;
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+::selection {
+  background: rgba(200, 150, 90, 0.2);
+  color: var(--foreground);
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .text-gradient {
+    background: linear-gradient(160deg, #ffffff 0%, #f5e6d0 55%, #c8965a 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .hero-name {
+    font-size: clamp(3.8rem, 10.5vw, 10.5rem);
+    line-height: 0.92;
+    letter-spacing: -0.03em;
+    font-weight: 700;
+  }
+}
