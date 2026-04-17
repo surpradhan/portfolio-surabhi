@@ -7,7 +7,6 @@ const stats = [
   { value: "2", label: "open protocols" },
   { value: "11", label: "RAG architectures evaluated" },
   { value: "8", label: "rec algorithms benchmarked" },
-  { value: "320", label: "contributions this year" },
 ];
 
 export default function Stats() {
