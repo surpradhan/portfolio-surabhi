@@ -51,8 +51,8 @@ export default function FlowField() {
 
     // Multi-frequency noise field — creates organic, flowing terrain-like currents
     function getAngle(x: number, y: number, t: number): number {
-      const nx = x / canvas.width;
-      const ny = y / canvas.height;
+      const nx = x / canvas!.width;
+      const ny = y / canvas!.height;
       return (
         Math.sin(nx * 4.2 + t * 0.35) * Math.PI +
         Math.cos(ny * 3.1 + t * 0.28) * Math.PI * 0.7 +
