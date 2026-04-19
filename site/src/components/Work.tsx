@@ -11,7 +11,7 @@ const protocols = [
       "I kept running into the same wall: frameworks that work brilliantly in isolation but can't share state across runtimes. This started as a fix for that.",
     tech: "Python · Multi-Agent · MIT License",
     badge: "Open Protocol",
-    link: "https://github.com/surpradhan/shared-memory-protocol",
+    link: "https://surpradhan.github.io/smp-docs/",
   },
   {
     title: "agent-event-protocol",
