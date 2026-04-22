@@ -4,6 +4,12 @@ import { motion } from "framer-motion";
 
 const posts = [
   {
+    title: "We Didn't Turn to AI Because We Were Lonely. We're Lonely Because We Turned to AI.",
+    hook: "We built something to take the edge off loneliness. It might be optimizing us for it.",
+    link: "https://medium.com/@surabhi7pradhan/we-didnt-turn-to-ai-because-we-were-lonely-we-re-lonely-because-we-turned-to-ai-aabe887d455f",
+    platform: "Medium",
+  },
+  {
     title: "Is AI Companionship Real Connection, or Just a Very Good Simulation?",
     hook: "When a machine says 'I understand' - is it lying, or is that even the right question?",
     link: "https://medium.com/@surabhi7pradhan/is-ai-companionship-real-connection-or-just-a-very-good-simulation-e41010ed850b",

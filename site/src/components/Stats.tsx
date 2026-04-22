@@ -3,10 +3,10 @@
 import { motion } from "framer-motion";
 
 const stats = [
-  { value: "13", label: "projects" },
+  { value: "12", label: "projects" },
   { value: "2", label: "open protocols" },
   { value: "11", label: "RAG architectures evaluated" },
-  { value: "8", label: "rec algorithms benchmarked" },
+  { value: "10", label: "agent workflow patterns compared" },
 ];
 
 export default function Stats() {
