@@ -68,36 +68,12 @@ const agents = [
     link: "https://surpradhan.github.io/orionpulse-data-agent/",
   },
   {
-    title: "agentic-codegen",
-    description:
-      "Multi-agent code generation platform: Python → optimized C++ using specialized AI agents with parallel processing and comprehensive validation pipelines.",
-    interesting: "Sequential validation is a bottleneck. Parallelizing it across specialized agents was the thing that actually moved output quality.",
-    tech: "Python · Multi-Agent · C++ · Parallel",
-    link: "https://github.com/surpradhan/agentic-codegen",
-  },
-  {
-    title: "customer-support-email-agent",
-    description:
-      "LangGraph-powered customer support email agent that reads, classifies, and drafts contextual responses - with an auditable, interruptible state machine.",
-    interesting: "Email agents fail silently. The state machine means you can see exactly where it is and pull the brake if needed.",
-    tech: "LangGraph · Python · Email",
-    link: "https://surpradhan.github.io/customer-support-email-agent/",
-  },
-  {
     title: "spendwise-ai",
     description:
       "A personal finance analyser that runs entirely on a local LLM stack. Drop in a bank export, get categorised spending and ML-powered insights - no data ever leaves your machine.",
     interesting: "Every architectural decision started from one question: what if the model never touches the internet? Built it local-first to see how far that constraint gets you.",
     tech: "Python · Local LLM · ML",
     link: "https://surpradhan.github.io/spendwise-ai/",
-  },
-  {
-    title: "debate-arena",
-    description:
-      "Watch two AI personalities argue about any topic you choose - give them opposing positions and let them go. Powered by Gradio.",
-    interesting: "Built to understand how LLMs construct arguments. Turns out it's also just fun.",
-    tech: "Python · Gradio · Multi-Model",
-    link: "https://github.com/surpradhan/debate-arena",
   },
 ];
 
@@ -117,6 +93,22 @@ const research = [
     spec: "8 algorithms · Fair eval protocol · Single dataset",
     tech: "Jupyter · Recommendation · Evaluation",
     link: "https://surpradhan.github.io/rec-bench/",
+  },
+  {
+    title: "agent-workflow-comparison",
+    description:
+      "A controlled benchmark comparing 10 AI agent workflow patterns on a shared structured business dataset. Every pattern runs the same 25 tasks against the same data using the same LLM — results are directly comparable.",
+    spec: "10 workflow patterns · 25 tasks · LLM-as-judge scoring",
+    tech: "Python · Multi-provider · Controlled eval",
+    link: "https://surpradhan.github.io/agent-workflow-comparison/",
+  },
+  {
+    title: "forecasting-showdown",
+    description:
+      "A rigorous benchmark of 11 time-series forecasting models on hourly energy demand data — from seasonal naive to gradient-boosted trees, deep recurrent networks, and a stacking ensemble. Tabular models dominate.",
+    spec: "11 models · UCI energy dataset · Chronological splits",
+    tech: "Python · MLflow · LightGBM · PyTorch",
+    link: "https://github.com/surpradhan/forecasting-showdown",
   },
 ];
 
@@ -212,7 +204,7 @@ export default function Work() {
           </p>
           <div className="h-px flex-1 bg-border/40" />
           <p className="text-xs font-mono text-foreground/15 tracking-[0.1em]">
-            9 projects
+            6 projects
           </p>
         </div>
 
