@@ -29,7 +29,7 @@ const protocols = [
       "A unified backend for personal AI agent systems — composes SMP for shared memory, adds an agent runner, execution event tracking, WebSocket live feed, and a mobile PWA control surface. Run and monitor agents from your phone.",
     interesting:
       "The orchestration layer was always the missing piece. SMP handles memory, AEP handles observability — this is what ties them together and puts control in your pocket.",
-    tech: "Python · FastAPI · React PWA · WebSocket · SMP",
+    tech: "Python · FastAPI · React (Vite) · WebSocket · SMP",
     badge: "Infrastructure",
     link: "https://github.com/surpradhan/personal-mobile-orchestrator",
   },
